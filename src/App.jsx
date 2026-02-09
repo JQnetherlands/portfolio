@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { Box } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
+
 import { Header } from "./components/Header";
 import { PortfolioPage } from "./pages/PortfolioPage";
 import { PortfolioItemPage } from "./pages/PortfolioItemPage";
 
 export const App = () => {
-  const [project, setProject] = useState(null);
+  const [project, setProject] = useState();
 
   return (
     <>
@@ -14,13 +15,13 @@ export const App = () => {
         onProjects={() => setProject(null)}
       />
 
-      <Box p={6}>
+      <Container as={"main"} maxW={"7xl"} py={{ base: 6, md: 10 }}>
         {project ? (
           <PortfolioItemPage item={project} reset={setProject} />
         ) : (
           <PortfolioPage onSelect={setProject} />
         )}
-      </Box>
+      </Container>
     </>
   );
 };

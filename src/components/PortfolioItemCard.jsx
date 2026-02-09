@@ -1,48 +1,42 @@
-import { Image, Card, HStack, Tag } from "@chakra-ui/react";
+import { Card, Image, Stack, Heading, Text, Flex, Box } from "@chakra-ui/react";
+import { PortfolioTag } from "./PortfolioTag";
 
 export const PortfoliItemCard = ({ item, onClick }) => {
     console.log(item.skills)
   return (
     <Card.Root
+      borderRadius={"xl"}
+      w="full"
+      h="auto"
+      cursor={"pointer"}
+      _hover={{ transform: "scale(1.01)" }}
+      transition={"transform 0.15s ease"}
       onClick={() => onClick(item)}
-      w="100%"
-      h="100%"
-      p={4}
-      gap={8}
-      textAlign="center"
-      alignItems="center"
-      cursor="pointer"
-      borderRadius="xl"
-      boxShadow="md"
-      transition="all 0.2s"
-      _hover={{
-        boxShadow: "xl",
-        transform: "translateY(-4px)",
-      }}
     >
-      <Card.Header>
-        <Image
-          src={item.imageUrl}
-          w={"200px"}
-          h={"200px"}
-          objectFit="cover"
-          borderRadius="md"
-        />
-      </Card.Header>
       <Card.Body>
-        <Card.Title fontSize="lg" mb={2}>
-          {item.title}
-        </Card.Title>
-        <Card.Description fontSize="sm" color="gray.600">
-          {item.description}
-        </Card.Description>
-        <HStack gap={4} justify="center" mt={4} wrap="wrap">
-          {item.skills.map((skill) => (
-            <Tag.Root key={skill} size="lg" variant="subtle">
-              <Tag.Label>{skill}</Tag.Label>
-            </Tag.Root>
-          ))}
-        </HStack>
+        <Box
+          w={"full"}
+          aspectRatio={{ base: 16 / 9, md: 4 / 3 }}
+          overflow={"hidden"}
+          borderRadius={"xl"}
+        >
+          <Image
+            src={item.imageUrl}
+            w={"full"}
+            h={"full"}
+            objectFit={"cover"}
+          />
+        </Box>
+
+        <Stack mt={{ base: 4, md: 6 }} gap={{ base: 2, md: 3 }}>
+          <Heading size={{ base: "sm", md: "md" }}>{item.title}</Heading>
+          <Text noOfLines={{ base: 3, md: 2 }}>{item.summary}</Text>
+          <Flex gap={2} wrap={"wrap"}>
+            {item.skills.map((skill) => (
+              <PortfolioTag key={skill}>{skill}</PortfolioTag>
+            ))}
+          </Flex>
+        </Stack>
       </Card.Body>
     </Card.Root>
   );
