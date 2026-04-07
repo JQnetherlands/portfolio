@@ -26,7 +26,7 @@ export const portfolioItems = JSON.parse(`[  {
   "imageUrl": "/images/Bookings.png",
   "skills": ["Node.js", "Express", "Prisma", "PostgreSQL", "JWT Authentication", "REST API", "Middleware", "Error Handling", "Backend Architecture"],
   "demoUrl": "https://your-demo-url.com",
-  "githubUrl": "https://github.com/JQnetherlands/your-backend-repo"
+  "githubUrl": "https://github.com/JQnetherlands/BookingAPI.git"
 },
 {
   "id": "co2-renewable-energy-analysis",
