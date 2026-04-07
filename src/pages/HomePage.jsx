@@ -26,8 +26,9 @@ export const HomePage = () => {
           </Heading>
 
           <Text fontSize={"xl"} maxW={"2xl"} mx={"auto"}>
-            Full-stack developer focused on building modern, scalable web
-            applications with React, Node.js and modern web techonologies.
+            Full-stack developer and data analyst focused on building modern,
+            scalable web applications with React, Node.js, and modern web
+            technologies, while extracting meaningful insights from data.
           </Text>
         </Box>
 
@@ -61,10 +62,7 @@ export const HomePage = () => {
             />
           ))}
         </SimpleGrid>
-        <Button
-          variant={"outline"}
-          onClick={() => navigate("/projects")}
-        >
+        <Button variant={"outline"} onClick={() => navigate("/projects")}>
           View All Projects
         </Button>
         <SkillsSection />
