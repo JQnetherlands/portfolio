@@ -1,6 +1,15 @@
-import { Box, Flex, Heading, HStack, Button, Spacer, Container } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  HStack,
+  Button,
+  Spacer,
+  Container,
+} from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 
-export const Header = ({ onHome, onProjects }) => {
+export const Header = () => {
   return (
     <Box
       as="header"
@@ -19,23 +28,41 @@ export const Header = ({ onHome, onProjects }) => {
 
           <HStack gap={6}>
             <Button
+              as={RouterLink}
+              to={"/"}
               variant="ghost"
               color="white"
               _hover={{ color: "black" }}
-              onClick={onHome}
             >
               Home
             </Button>
             <Button
+              as={RouterLink}
+              to="/projects"
               variant="ghost"
               color="white"
               _hover={{ color: "black" }}
-              onClick={onProjects}
             >
               Projects
             </Button>
-            <Button variant="ghost" color="white" _hover={{ color: "black" }}>About</Button>
-            <Button variant="ghost" color="white" _hover={{ color: "black" }}>Contact</Button>
+            <Button
+              as={RouterLink}
+              to={"/about"}
+              variant="ghost"
+              color="white"
+              _hover={{ color: "black" }}
+            >
+              About
+            </Button>
+            <Button
+              as={RouterLink}
+              to={"/contact"}
+              variant="ghost"
+              color="white"
+              _hover={{ color: "black" }}
+            >
+              Contact
+            </Button>
           </HStack>
         </Flex>
       </Container>

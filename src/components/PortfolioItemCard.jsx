@@ -1,8 +1,7 @@
 import { Card, Image, Stack, Heading, Text, Flex, Box } from "@chakra-ui/react";
 import { PortfolioTag } from "./PortfolioTag";
 
-export const PortfoliItemCard = ({ item, onClick }) => {
-    console.log(item.skills)
+export const PortfolioItemCard = ({ item, onClick }) => {
   return (
     <Card.Root
       borderRadius={"xl"}
@@ -16,15 +15,16 @@ export const PortfoliItemCard = ({ item, onClick }) => {
       <Card.Body>
         <Box
           w={"full"}
-          aspectRatio={{ base: 16 / 9, md: 4 / 3 }}
+          aspectRatio={{ base: 16 / 9, sm: 3 / 2, md: 4 / 3, lg: 1 / 1 }}
           overflow={"hidden"}
           borderRadius={"xl"}
         >
           <Image
             src={item.imageUrl}
-            w={"full"}
-            h={"full"}
-            objectFit={"cover"}
+            w={"100%"}
+            h={"100%"}
+            objectFit={"contain"}
+            objectPosition={"center"}
           />
         </Box>
 

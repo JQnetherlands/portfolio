@@ -1,12 +1,14 @@
 import { SimpleGrid } from "@chakra-ui/react";
-import { PortfoliItemCard } from "../components/PortfolioItemCard";
+import { PortfolioItemCard } from "../components/PortfolioItemCard";
 import { portfolioItems } from "../utils/data.js";
+import { useNavigate } from "react-router-dom";
 
-export const PortfolioPage = ({ onSelect }) => {
+export const PortfolioPage = () => {
+  const navigate = useNavigate();
   return (
       <SimpleGrid columns={{ base: 1, sm: 2, lg: 3}} gap={{ base: 4, md: 6 }}>
         {portfolioItems.map((item) => (
-          <PortfoliItemCard key={item.id} item={item} onClick={onSelect} />
+          <PortfolioItemCard key={item.id} item={item} onClick={() => navigate(`/projects/${item.id}`)} />
         ))}
       </SimpleGrid>
   );
