@@ -26,7 +26,7 @@ export const Footer = () => {
               <Icon as={FaGithub} boxSize={5} />
               GitHub
             </Link>
-            <Link
+            {/* <Link
               display={"flex"}
               alignItems={"center"}
               gap={2}
@@ -36,7 +36,7 @@ export const Footer = () => {
             >
               <Icon as={FaLinkedin} boxSize={5} />
               LinkedIn
-            </Link>
+            </Link> */}
             <Link
               display={"flex"}
               alignItems={"center"}

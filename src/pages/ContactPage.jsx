@@ -25,9 +25,9 @@ export const ContactPage = () => {
         </Link>
       </Text>
 
-      <Text>
+      {/* <Text>
         LinkedIn: <Link color={"blue.500"}>linkedin.com/in/yourprofile</Link>
-      </Text>
+      </Text> */}
     </Stack>
   );
 };
