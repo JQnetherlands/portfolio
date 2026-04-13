@@ -6,22 +6,42 @@ export const AboutPage = () => {
       <Heading>About Me</Heading>
 
       <Text>
-        I&apos;m a passionate full-stack developer and data analyst who enjoys
-        building modern, scalable web applications and extracting meaningful
-        insights from data.
+        I’m a passionate full-stack developer and data analyst with a strong
+        interest in building modern, scalable applications and understanding how
+        complex systems work. My journey into tech is non-traditional — I
+        started learning programming on my own, driven by curiosity and a desire
+        to create.
       </Text>
 
       <Text>
-        My main focus is creating performant, accessible, and maintainable
-        applications using tools like React, Node.js, Express, Prisma, and
-        modern frontend frameworks, while also leveraging data analysis skills
-        to drive informed decisions.
+        Over time, I developed my skills through self-study and hands-on
+        experience, and later strengthened my foundation by completing a
+        full-stack development and data analysis program at Winc Academy. I
+        enjoy working across the stack, using technologies like React, Node.js,
+        Express, and Prisma, while also applying data analysis to support better
+        decision-making.
       </Text>
 
       <Text>
-        When I&apos;m not coding or analyzing data, I enjoy exploring new
-        technologies, learning best practices, and volunteering to mentor future
-        developers at HackYourFuture.
+        What defines me as a developer is my mindset: I’m a persistent learner
+        who likes to deeply understand what I build. I pay attention to the
+        trade-offs behind technical decisions, and I enjoy solving problems in a
+        creative and structured way. I aim to write code that is not only
+        functional, but also clean, maintainable, and scalable.
+      </Text>
+
+      <Text>
+        I’m currently looking for opportunities where I can grow as a developer,
+        contribute to meaningful projects, and work in a team that values
+        learning, collaboration, and quality. In the long term, I want to become
+        a strong backend or full-stack engineer who builds systems that have
+        real impact.
+      </Text>
+
+      <Text>
+        When I’m not coding, I enjoy learning about new technologies, improving
+        my skills, and mentoring aspiring developers through communities like
+        HackYourFuture.
       </Text>
     </Stack>
   );
