@@ -25,7 +25,7 @@ export const portfolioItems = JSON.parse(`[  {
   "description": "A full-featured backend API for a booking platform that manages users, properties, hosts, bookings, and reviews. Built with Node.js, Express, and Prisma ORM, the project follows a modular service-based architecture with clear separation of concerns. It includes JWT authentication for protected routes, centralized error handling, logging middleware, and database integration with PostgreSQL/SQLite. The API is designed to be scalable, maintainable, and production-ready, with structured routing, reusable services, and validation utilities.",
   "imageUrl": "/images/Bookings.png",
   "skills": ["Node.js", "Express", "Prisma", "PostgreSQL", "JWT Authentication", "REST API", "Middleware", "Error Handling", "Backend Architecture"],
-  "demoUrl": "https://your-demo-url.com",
+  "demoUrl": "https://bookingapi-prho.onrender.com",
   "githubUrl": "https://github.com/JQnetherlands/BookingAPI.git"
 },
 {
